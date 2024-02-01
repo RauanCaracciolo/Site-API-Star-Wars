@@ -1,0 +1,28 @@
+.films_list{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    list-style-position: inside;
+    list-style-type:upper-roman;
+}
+
+.filme{
+    font-size: 2em;
+    padding: 2%;
+}
+#film:hover{
+    font-size: 1.2em;
+    transition: 1s;
+    cursor: pointer;
+    text-decoration: underline;
+
+}
+
+#parent{
+    font-size: 0.5em;
+   
+}
+#parent:hover{
+    cursor: pointer;
+
+}

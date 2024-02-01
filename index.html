@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/search.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+            <a class="navbar-brand">Star Wars</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/films.html">Filmes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/people.html">Personagens</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/tarships.html">Naves</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/vehicles.html">Veículos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/species.html">Espécies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/planets.html">Planetas</a>
+                </li>
+                </ul>
+                <div class="find-in-document-container">
+                    <input type="text" id="txt-to-find" value="search" oninput="findInDocument({position: 0})"/>
+                    <input type="button" value="Prev" onclick="findInDocument({position: -1})"/>
+                    <input type="button" value="Next" onclick="findInDocument({position: 1})"/>
+                </div>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <main>
+        <section class="welcome">
+            <h3>Bem vindo!</h3>
+            <p>Nosso site armazena centenas de informações sobre Personagems, Filmes, Planetas e muitos mais de Star wars!</p>
+            <p>Navegue por meio de nosso cabeçalho, procure por algo especifico na página utilizando nossa barra de pesquisa localizada no canto superior direito.</p>
+        </section>
+        <section class="wars">
+            <div class="explain">
+                <h3>O que é Star Wars?</h3>
+                <p>Se você caiu aqui de paraquedas, e provavelmente viveu em uma caverna pelos ultimos 50 anos, não se preocupe, vamos te explicar!</p>
+                <p>Star Wars é uma série de filmes que se baseia em um passado longínquo no qual a humanidade convive com diversas espécies alinígenas e visita muitos planetas.</p>
+                <p>Nesse universo, existe um poder místico chamado de <stromg>A força</stromg>, que pode ser obtida de dois modos, com equilíbrio e paz ou com raiva e ódio.</p>
+                <p>Cada modo de se ligar a força te transforma em um tipo diferente de usuario, pela Paz você se torna um Jedi, pelo ódio, um Sith.</p>
+                <p>A história começa com Luke Skywalker vivendo em Tatooine, Luke se encontra com Obi Wan, um dos últimos Jedis, então a Triologia Inicial começa!</p>
+            </div>
+            <div class="triologias">
+                <div class="classic">
+                    <h3>Triologia clássica</h3>
+                    <p>A triologia classica conta a saga de Luke Skywalker se juntando aos Rebeldes e se tornando um Jedi, para destruir o Império.</p>
+                    <p>No primeiro filme, nosso protagonista descobre sobre A Força e sobre os Jedi, descobrindo um poder latente em si.</p>
+                    <p>No segundo filme, Luke se encontra com Mestre Yoda, um dos mais poderosos Jedis que existiram, para treinar seus poderes e conseguir enfrenatar o Império.</p>
+                    <p>No terceiro e último filme dessa triologia, Luke se junta com os Rebeldes para um ataque final à Estrela da Morte, a maior arma do Império.</p>
+                </div>
+                <div class="prequel">
+                    <h3>Prequels</h3>
+                    <p>A triologia Prequels conta a história anterior aos filmes clássicos, mostrando os acontecimentos da dissolução e quase extinção dos Jedis.</p>
+                    <p>O primeiro filme nos introduz Anakin Skywalker, pai de Luke Skywalker, ainda como uma criança, porém destinada a "Trazer o equilibrio para a força".</p>
+                    <p>O segundo filme, nos mostra uma guerra grandiosa entre as potências da época, e a ascenção de Palpatine ao Senado.</p>
+                    <p>O terceiro filme, introduz a origem de Darth Vader, o grande vilão da triologia original, e como Anakin se corrompe aos Sith.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="bg-body-tertiary text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: #000000; color: #fff;">
+          © Rauan Caracciolo
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/swapi.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veículos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="../styles/style.css" rel="stylesheet">
+    <link href="../styles/vehicles.css" rel="stylesheet">
+    <link href="../styles/search.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+            <a class="navbar-brand">Star Wars</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="films.html">Filmes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="people.html">Personagens</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="starships.html">Naves</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="vehicles.html">Veículos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="species.html">Espécies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="planets.html">Planetas</a>
+                </li>
+                </ul>
+                <div class="find-in-document-container">
+                    <input type="text" id="txt-to-find" value="" oninput="findInDocument({position: 0})"/>
+                    <input type="button" value="Prev" onclick="findInDocument({position: -1})"/>
+                    <input type="button" value="Next" onclick="findInDocument({position: 1})"/>
+                </div>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <main>
+        <ul class="vehicles_list">
+        </ul>
+
+    </main>
+    <footer class="bg-body-tertiary text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: #000000; color: #fff;">
+          © Rauan Caracciolo
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../scripts/search.js"></script>
+    <script src="../scripts/swapi.js"></script>
+    <script src="../scripts/vehicles.js"></script>
+</body>
+</html>

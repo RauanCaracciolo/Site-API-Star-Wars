@@ -1,0 +1,42 @@
+body {
+    background-image: radial-gradient(circle, #000000, #00004d, #000099, #0000ff, #4d4dff);
+    background-size: 200% 200%;
+    animation: gradient-shift 40s infinite linear;
+    color: #ffffff;
+}
+#marcaDagua{
+    color: #ffffff;
+}
+.welcome, .wars{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.2em;
+}
+.welcome{
+    margin:3%;
+    border-bottom: 1px solid #0000ff;
+}
+.welcome h3{
+    font-size: 2em;
+}
+.triologias{
+    margin-top: 1.5%;
+}
+.prequel{
+    margin-bottom: 3%;
+}
+@keyframes gradient-shift {
+    0% {
+
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+
+    }
+    100% {
+
+        background-position: 0% 0%;
+    }
+}
